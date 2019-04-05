@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D67B627224EC57A008A8225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B626224EC57A008A8225 /* AppDelegate.swift */; };
+		9D67B629224EC57A008A8225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B628224EC57A008A8225 /* ViewController.swift */; };
+		9D67B62C224EC57A008A8225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D67B62A224EC57A008A8225 /* Main.storyboard */; };
+		9D67B62F224EC57A008A8225 /* zap_challenge_viper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B62D224EC57A008A8225 /* zap_challenge_viper.xcdatamodeld */; };
+		9D67B631224EC57C008A8225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D67B630224EC57C008A8225 /* Assets.xcassets */; };
+		9D67B634224EC57C008A8225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D67B632224EC57C008A8225 /* LaunchScreen.storyboard */; };
+		9D67B63F224EC57C008A8225 /* zap_challenge_viperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B63E224EC57C008A8225 /* zap_challenge_viperTests.swift */; };
+		9D67B64A224EC57C008A8225 /* zap_challenge_viperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B649224EC57C008A8225 /* zap_challenge_viperUITests.swift */; };
+		9D67B65F224EC6F8008A8225 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D67B659224EC6F8008A8225 /* List.storyboard */; };
+		9D67B660224EC6F8008A8225 /* ListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B65A224EC6F8008A8225 /* ListInterfaces.swift */; };
+		9D67B661224EC6F8008A8225 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B65B224EC6F8008A8225 /* ListPresenter.swift */; };
+		9D67B662224EC6F8008A8225 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B65C224EC6F8008A8225 /* ListViewController.swift */; };
+		9D67B663224EC6F8008A8225 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B65D224EC6F8008A8225 /* ListInteractor.swift */; };
+		9D67B664224EC6F8008A8225 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B65E224EC6F8008A8225 /* ListWireframe.swift */; };
+		9D67B673224ECDA9008A8225 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B66E224ECDA9008A8225 /* InteractorInterface.swift */; };
+		9D67B674224ECDA9008A8225 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B66F224ECDA9008A8225 /* UIStoryboardExtension.swift */; };
+		9D67B675224ECDA9008A8225 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B670224ECDA9008A8225 /* PresenterInterface.swift */; };
+		9D67B676224ECDA9008A8225 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B671224ECDA9008A8225 /* ViewInterface.swift */; };
+		9D67B677224ECDA9008A8225 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B672224ECDA9008A8225 /* BaseWireframe.swift */; };
+		9D67B67C224EDB55008A8225 /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B67B224EDB55008A8225 /* ViperViewController.swift */; };
+		9D67B67F22525DD8008A8225 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B67E22525DD8008A8225 /* Property.swift */; };
+		9D67B68622526160008A8225 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B68522526160008A8225 /* NetworkClient.swift */; };
+		9D67B688225261CB008A8225 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B687225261CB008A8225 /* APIClient.swift */; };
+		9D67B68E22526205008A8225 /* HTTPHeaderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B68922526205008A8225 /* HTTPHeaderField.swift */; };
+		9D67B68F22526205008A8225 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B68A22526205008A8225 /* HTTPMethod.swift */; };
+		9D67B69022526205008A8225 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B68B22526205008A8225 /* ContentType.swift */; };
+		9D67B69122526205008A8225 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B68C22526205008A8225 /* Response.swift */; };
+		9D67B69222526205008A8225 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B68D22526205008A8225 /* HTTPClient.swift */; };
+		9D67B69522528ADB008A8225 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B69422528ADB008A8225 /* PropertyTableViewCell.swift */; };
+		9D67B69722529425008A8225 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B69622529425008A8225 /* UIImageViewExtension.swift */; };
+		9D67B6AA22529FB8008A8225 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D67B6A422529FB8008A8225 /* Details.storyboard */; };
+		9D67B6AB22529FB8008A8225 /* DetailsInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6A522529FB8008A8225 /* DetailsInterfaces.swift */; };
+		9D67B6AC22529FB8008A8225 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6A622529FB8008A8225 /* DetailsPresenter.swift */; };
+		9D67B6AD22529FB8008A8225 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6A722529FB8008A8225 /* DetailsViewController.swift */; };
+		9D67B6AE22529FB8008A8225 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6A822529FB8008A8225 /* DetailsInteractor.swift */; };
+		9D67B6AF22529FB8008A8225 /* DetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6A922529FB8008A8225 /* DetailsWireframe.swift */; };
+		9D67B6B722568F2D008A8225 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D67B6B122568F2D008A8225 /* Login.storyboard */; };
+		9D67B6B822568F2D008A8225 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6B222568F2D008A8225 /* LoginInterfaces.swift */; };
+		9D67B6B922568F2D008A8225 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6B322568F2D008A8225 /* LoginPresenter.swift */; };
+		9D67B6BA22568F2D008A8225 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6B422568F2D008A8225 /* LoginViewController.swift */; };
+		9D67B6BB22568F2D008A8225 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6B522568F2D008A8225 /* LoginInteractor.swift */; };
+		9D67B6BC22568F2D008A8225 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6B622568F2D008A8225 /* LoginWireframe.swift */; };
+		9D67B6BF2257A492008A8225 /* KeyboardNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6BE2257A492008A8225 /* KeyboardNotificationExtension.swift */; };
+		9D67B6C12257A858008A8225 /* KeyboardObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6C02257A858008A8225 /* KeyboardObserving.swift */; };
+		9D67B6C42257A8B3008A8225 /* KeyboardControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6C32257A8B3008A8225 /* KeyboardControllable.swift */; };
+		9D67B6C72257C247008A8225 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6C62257C247008A8225 /* LoginView.swift */; };
+		9D67B6C92257D901008A8225 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6C82257D901008A8225 /* StringExtension.swift */; };
+		9D67B6D82257E554008A8225 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6D72257E554008A8225 /* LoginDataManager.swift */; };
+		9D67B6DA2257E78C008A8225 /* BaseDataManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67B6D92257E78C008A8225 /* BaseDataManagerInterface.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D67B63B224EC57C008A8225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D67B61B224EC57A008A8225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D67B622224EC57A008A8225;
+			remoteInfo = "zap-challenge-viper";
+		};
+		9D67B646224EC57C008A8225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D67B61B224EC57A008A8225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D67B622224EC57A008A8225;
+			remoteInfo = "zap-challenge-viper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D67B623224EC57A008A8225 /* zap-challenge-viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zap-challenge-viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D67B626224EC57A008A8225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D67B628224EC57A008A8225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D67B62B224EC57A008A8225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D67B62E224EC57A008A8225 /* zap_challenge_viper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = zap_challenge_viper.xcdatamodel; sourceTree = "<group>"; };
+		9D67B630224EC57C008A8225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D67B633224EC57C008A8225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D67B635224EC57C008A8225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D67B63A224EC57C008A8225 /* zap-challenge-viperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "zap-challenge-viperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D67B63E224EC57C008A8225 /* zap_challenge_viperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zap_challenge_viperTests.swift; sourceTree = "<group>"; };
+		9D67B640224EC57C008A8225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D67B645224EC57C008A8225 /* zap-challenge-viperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "zap-challenge-viperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D67B649224EC57C008A8225 /* zap_challenge_viperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zap_challenge_viperUITests.swift; sourceTree = "<group>"; };
+		9D67B64B224EC57C008A8225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D67B659224EC6F8008A8225 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		9D67B65A224EC6F8008A8225 /* ListInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInterfaces.swift; sourceTree = "<group>"; };
+		9D67B65B224EC6F8008A8225 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		9D67B65C224EC6F8008A8225 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9D67B65D224EC6F8008A8225 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		9D67B65E224EC6F8008A8225 /* ListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		9D67B66E224ECDA9008A8225 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		9D67B66F224ECDA9008A8225 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		9D67B670224ECDA9008A8225 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		9D67B671224ECDA9008A8225 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		9D67B672224ECDA9008A8225 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		9D67B67B224EDB55008A8225 /* ViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
+		9D67B67E22525DD8008A8225 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		9D67B68522526160008A8225 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		9D67B687225261CB008A8225 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9D67B68922526205008A8225 /* HTTPHeaderField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeaderField.swift; sourceTree = "<group>"; };
+		9D67B68A22526205008A8225 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9D67B68B22526205008A8225 /* ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		9D67B68C22526205008A8225 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9D67B68D22526205008A8225 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		9D67B69422528ADB008A8225 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		9D67B69622529425008A8225 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		9D67B6A422529FB8008A8225 /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		9D67B6A522529FB8008A8225 /* DetailsInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInterfaces.swift; sourceTree = "<group>"; };
+		9D67B6A622529FB8008A8225 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		9D67B6A722529FB8008A8225 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9D67B6A822529FB8008A8225 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		9D67B6A922529FB8008A8225 /* DetailsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWireframe.swift; sourceTree = "<group>"; };
+		9D67B6B122568F2D008A8225 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9D67B6B222568F2D008A8225 /* LoginInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
+		9D67B6B322568F2D008A8225 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		9D67B6B422568F2D008A8225 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D67B6B522568F2D008A8225 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		9D67B6B622568F2D008A8225 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		9D67B6BE2257A492008A8225 /* KeyboardNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationExtension.swift; sourceTree = "<group>"; };
+		9D67B6C02257A858008A8225 /* KeyboardObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserving.swift; sourceTree = "<group>"; };
+		9D67B6C32257A8B3008A8225 /* KeyboardControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardControllable.swift; sourceTree = "<group>"; };
+		9D67B6C62257C247008A8225 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9D67B6C82257D901008A8225 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = "New Group/StringExtension.swift"; sourceTree = "<group>"; };
+		9D67B6D72257E554008A8225 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		9D67B6D92257E78C008A8225 /* BaseDataManagerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataManagerInterface.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D67B620224EC57A008A8225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D67B637224EC57C008A8225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D67B642224EC57C008A8225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D67B61A224EC57A008A8225 = {
+			isa = PBXGroup;
+			children = (
+				9D67B625224EC57A008A8225 /* zap-challenge-viper */,
+				9D67B63D224EC57C008A8225 /* zap-challenge-viperTests */,
+				9D67B648224EC57C008A8225 /* zap-challenge-viperUITests */,
+				9D67B624224EC57A008A8225 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D67B624224EC57A008A8225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B623224EC57A008A8225 /* zap-challenge-viper.app */,
+				9D67B63A224EC57C008A8225 /* zap-challenge-viperTests.xctest */,
+				9D67B645224EC57C008A8225 /* zap-challenge-viperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D67B625224EC57A008A8225 /* zap-challenge-viper */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B67D22525CDB008A8225 /* Common */,
+				9D67B678224ECDBD008A8225 /* Extensions */,
+				9D67B658224EC5DE008A8225 /* Settings */,
+				9D67B665224EC760008A8225 /* Base */,
+				9D67B69822529EE4008A8225 /* Modules */,
+				9D67B628224EC57A008A8225 /* ViewController.swift */,
+				9D67B62A224EC57A008A8225 /* Main.storyboard */,
+				9D67B630224EC57C008A8225 /* Assets.xcassets */,
+				9D67B632224EC57C008A8225 /* LaunchScreen.storyboard */,
+				9D67B635224EC57C008A8225 /* Info.plist */,
+				9D67B62D224EC57A008A8225 /* zap_challenge_viper.xcdatamodeld */,
+			);
+			path = "zap-challenge-viper";
+			sourceTree = "<group>";
+		};
+		9D67B63D224EC57C008A8225 /* zap-challenge-viperTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B63E224EC57C008A8225 /* zap_challenge_viperTests.swift */,
+				9D67B640224EC57C008A8225 /* Info.plist */,
+			);
+			path = "zap-challenge-viperTests";
+			sourceTree = "<group>";
+		};
+		9D67B648224EC57C008A8225 /* zap-challenge-viperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B649224EC57C008A8225 /* zap_challenge_viperUITests.swift */,
+				9D67B64B224EC57C008A8225 /* Info.plist */,
+			);
+			path = "zap-challenge-viperUITests";
+			sourceTree = "<group>";
+		};
+		9D67B657224EC5D1008A8225 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6D52257E4A4008A8225 /* Router */,
+				9D67B6D32257E470008A8225 /* Presenter */,
+				9D67B6D22257E463008A8225 /* Interactor */,
+				9D67B6D12257E459008A8225 /* Views */,
+				9D67B65A224EC6F8008A8225 /* ListInterfaces.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		9D67B658224EC5DE008A8225 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B626224EC57A008A8225 /* AppDelegate.swift */,
+				9D67B67B224EDB55008A8225 /* ViperViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9D67B665224EC760008A8225 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B672224ECDA9008A8225 /* BaseWireframe.swift */,
+				9D67B66E224ECDA9008A8225 /* InteractorInterface.swift */,
+				9D67B670224ECDA9008A8225 /* PresenterInterface.swift */,
+				9D67B671224ECDA9008A8225 /* ViewInterface.swift */,
+				9D67B6D92257E78C008A8225 /* BaseDataManagerInterface.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9D67B678224ECDBD008A8225 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6C22257A85C008A8225 /* Keyboard */,
+				9D67B66F224ECDA9008A8225 /* UIStoryboardExtension.swift */,
+				9D67B69622529425008A8225 /* UIImageViewExtension.swift */,
+				9D67B6BE2257A492008A8225 /* KeyboardNotificationExtension.swift */,
+				9D67B6C82257D901008A8225 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D67B67D22525CDB008A8225 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B68422526136008A8225 /* APIClient */,
+				9D67B680225260AD008A8225 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9D67B680225260AD008A8225 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B67E22525DD8008A8225 /* Property.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D67B68422526136008A8225 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B687225261CB008A8225 /* APIClient.swift */,
+				9D67B68522526160008A8225 /* NetworkClient.swift */,
+				9D67B68B22526205008A8225 /* ContentType.swift */,
+				9D67B68D22526205008A8225 /* HTTPClient.swift */,
+				9D67B68922526205008A8225 /* HTTPHeaderField.swift */,
+				9D67B68A22526205008A8225 /* HTTPMethod.swift */,
+				9D67B68C22526205008A8225 /* Response.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		9D67B69322528A83008A8225 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B69422528ADB008A8225 /* PropertyTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9D67B69822529EE4008A8225 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6B022568F10008A8225 /* Login */,
+				9D67B69922529EF5008A8225 /* Details */,
+				9D67B657224EC5D1008A8225 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9D67B69922529EF5008A8225 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6D02257E43E008A8225 /* Router */,
+				9D67B6CF2257E42B008A8225 /* Presenter */,
+				9D67B6CE2257E3FF008A8225 /* Interactor */,
+				9D67B6CD2257E3E1008A8225 /* View */,
+				9D67B6A522529FB8008A8225 /* DetailsInterfaces.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		9D67B6B022568F10008A8225 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6D62257E53E008A8225 /* DataManager */,
+				9D67B6CC2257E3C3008A8225 /* Router */,
+				9D67B6CB2257E3AB008A8225 /* Interactor */,
+				9D67B6CA2257E399008A8225 /* Presenter */,
+				9D67B6C52257C1A9008A8225 /* View */,
+				9D67B6B222568F2D008A8225 /* LoginInterfaces.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9D67B6C22257A85C008A8225 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6C02257A858008A8225 /* KeyboardObserving.swift */,
+				9D67B6C32257A8B3008A8225 /* KeyboardControllable.swift */,
+			);
+			name = Keyboard;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9D67B6C52257C1A9008A8225 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6B122568F2D008A8225 /* Login.storyboard */,
+				9D67B6B422568F2D008A8225 /* LoginViewController.swift */,
+				9D67B6C62257C247008A8225 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D67B6CA2257E399008A8225 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6B322568F2D008A8225 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9D67B6CB2257E3AB008A8225 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6B522568F2D008A8225 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9D67B6CC2257E3C3008A8225 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6B622568F2D008A8225 /* LoginWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9D67B6CD2257E3E1008A8225 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6A422529FB8008A8225 /* Details.storyboard */,
+				9D67B6A722529FB8008A8225 /* DetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D67B6CE2257E3FF008A8225 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6A822529FB8008A8225 /* DetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9D67B6CF2257E42B008A8225 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6A622529FB8008A8225 /* DetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9D67B6D02257E43E008A8225 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6A922529FB8008A8225 /* DetailsWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9D67B6D12257E459008A8225 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B659224EC6F8008A8225 /* List.storyboard */,
+				9D67B65C224EC6F8008A8225 /* ListViewController.swift */,
+				9D67B69322528A83008A8225 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D67B6D22257E463008A8225 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B65D224EC6F8008A8225 /* ListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9D67B6D32257E470008A8225 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B65B224EC6F8008A8225 /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9D67B6D52257E4A4008A8225 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B65E224EC6F8008A8225 /* ListWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9D67B6D62257E53E008A8225 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				9D67B6D72257E554008A8225 /* LoginDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D67B622224EC57A008A8225 /* zap-challenge-viper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D67B64E224EC57C008A8225 /* Build configuration list for PBXNativeTarget "zap-challenge-viper" */;
+			buildPhases = (
+				9D67B61F224EC57A008A8225 /* Sources */,
+				9D67B620224EC57A008A8225 /* Frameworks */,
+				9D67B621224EC57A008A8225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zap-challenge-viper";
+			productName = "zap-challenge-viper";
+			productReference = 9D67B623224EC57A008A8225 /* zap-challenge-viper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D67B639224EC57C008A8225 /* zap-challenge-viperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D67B651224EC57C008A8225 /* Build configuration list for PBXNativeTarget "zap-challenge-viperTests" */;
+			buildPhases = (
+				9D67B636224EC57C008A8225 /* Sources */,
+				9D67B637224EC57C008A8225 /* Frameworks */,
+				9D67B638224EC57C008A8225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D67B63C224EC57C008A8225 /* PBXTargetDependency */,
+			);
+			name = "zap-challenge-viperTests";
+			productName = "zap-challenge-viperTests";
+			productReference = 9D67B63A224EC57C008A8225 /* zap-challenge-viperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D67B644224EC57C008A8225 /* zap-challenge-viperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D67B654224EC57C008A8225 /* Build configuration list for PBXNativeTarget "zap-challenge-viperUITests" */;
+			buildPhases = (
+				9D67B641224EC57C008A8225 /* Sources */,
+				9D67B642224EC57C008A8225 /* Frameworks */,
+				9D67B643224EC57C008A8225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D67B647224EC57C008A8225 /* PBXTargetDependency */,
+			);
+			name = "zap-challenge-viperUITests";
+			productName = "zap-challenge-viperUITests";
+			productReference = 9D67B645224EC57C008A8225 /* zap-challenge-viperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D67B61B224EC57A008A8225 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Renato Medina";
+				TargetAttributes = {
+					9D67B622224EC57A008A8225 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9D67B639224EC57C008A8225 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9D67B622224EC57A008A8225;
+					};
+					9D67B644224EC57C008A8225 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9D67B622224EC57A008A8225;
+					};
+				};
+			};
+			buildConfigurationList = 9D67B61E224EC57A008A8225 /* Build configuration list for PBXProject "zap-challenge-viper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D67B61A224EC57A008A8225;
+			productRefGroup = 9D67B624224EC57A008A8225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D67B622224EC57A008A8225 /* zap-challenge-viper */,
+				9D67B639224EC57C008A8225 /* zap-challenge-viperTests */,
+				9D67B644224EC57C008A8225 /* zap-challenge-viperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D67B621224EC57A008A8225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D67B6AA22529FB8008A8225 /* Details.storyboard in Resources */,
+				9D67B634224EC57C008A8225 /* LaunchScreen.storyboard in Resources */,
+				9D67B6B722568F2D008A8225 /* Login.storyboard in Resources */,
+				9D67B631224EC57C008A8225 /* Assets.xcassets in Resources */,
+				9D67B65F224EC6F8008A8225 /* List.storyboard in Resources */,
+				9D67B62C224EC57A008A8225 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D67B638224EC57C008A8225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D67B643224EC57C008A8225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D67B61F224EC57A008A8225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D67B6AB22529FB8008A8225 /* DetailsInterfaces.swift in Sources */,
+				9D67B67F22525DD8008A8225 /* Property.swift in Sources */,
+				9D67B6AD22529FB8008A8225 /* DetailsViewController.swift in Sources */,
+				9D67B661224EC6F8008A8225 /* ListPresenter.swift in Sources */,
+				9D67B62F224EC57A008A8225 /* zap_challenge_viper.xcdatamodeld in Sources */,
+				9D67B675224ECDA9008A8225 /* PresenterInterface.swift in Sources */,
+				9D67B68E22526205008A8225 /* HTTPHeaderField.swift in Sources */,
+				9D67B677224ECDA9008A8225 /* BaseWireframe.swift in Sources */,
+				9D67B674224ECDA9008A8225 /* UIStoryboardExtension.swift in Sources */,
+				9D67B68F22526205008A8225 /* HTTPMethod.swift in Sources */,
+				9D67B6AC22529FB8008A8225 /* DetailsPresenter.swift in Sources */,
+				9D67B6C92257D901008A8225 /* StringExtension.swift in Sources */,
+				9D67B6AF22529FB8008A8225 /* DetailsWireframe.swift in Sources */,
+				9D67B6BA22568F2D008A8225 /* LoginViewController.swift in Sources */,
+				9D67B662224EC6F8008A8225 /* ListViewController.swift in Sources */,
+				9D67B68622526160008A8225 /* NetworkClient.swift in Sources */,
+				9D67B69022526205008A8225 /* ContentType.swift in Sources */,
+				9D67B6C72257C247008A8225 /* LoginView.swift in Sources */,
+				9D67B663224EC6F8008A8225 /* ListInteractor.swift in Sources */,
+				9D67B6AE22529FB8008A8225 /* DetailsInteractor.swift in Sources */,
+				9D67B6C42257A8B3008A8225 /* KeyboardControllable.swift in Sources */,
+				9D67B664224EC6F8008A8225 /* ListWireframe.swift in Sources */,
+				9D67B6B922568F2D008A8225 /* LoginPresenter.swift in Sources */,
+				9D67B6D82257E554008A8225 /* LoginDataManager.swift in Sources */,
+				9D67B69522528ADB008A8225 /* PropertyTableViewCell.swift in Sources */,
+				9D67B69722529425008A8225 /* UIImageViewExtension.swift in Sources */,
+				9D67B629224EC57A008A8225 /* ViewController.swift in Sources */,
+				9D67B6BB22568F2D008A8225 /* LoginInteractor.swift in Sources */,
+				9D67B6BC22568F2D008A8225 /* LoginWireframe.swift in Sources */,
+				9D67B673224ECDA9008A8225 /* InteractorInterface.swift in Sources */,
+				9D67B6C12257A858008A8225 /* KeyboardObserving.swift in Sources */,
+				9D67B627224EC57A008A8225 /* AppDelegate.swift in Sources */,
+				9D67B6B822568F2D008A8225 /* LoginInterfaces.swift in Sources */,
+				9D67B67C224EDB55008A8225 /* ViperViewController.swift in Sources */,
+				9D67B69122526205008A8225 /* Response.swift in Sources */,
+				9D67B676224ECDA9008A8225 /* ViewInterface.swift in Sources */,
+				9D67B69222526205008A8225 /* HTTPClient.swift in Sources */,
+				9D67B660224EC6F8008A8225 /* ListInterfaces.swift in Sources */,
+				9D67B688225261CB008A8225 /* APIClient.swift in Sources */,
+				9D67B6BF2257A492008A8225 /* KeyboardNotificationExtension.swift in Sources */,
+				9D67B6DA2257E78C008A8225 /* BaseDataManagerInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D67B636224EC57C008A8225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D67B63F224EC57C008A8225 /* zap_challenge_viperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D67B641224EC57C008A8225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D67B64A224EC57C008A8225 /* zap_challenge_viperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D67B63C224EC57C008A8225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D67B622224EC57A008A8225 /* zap-challenge-viper */;
+			targetProxy = 9D67B63B224EC57C008A8225 /* PBXContainerItemProxy */;
+		};
+		9D67B647224EC57C008A8225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D67B622224EC57A008A8225 /* zap-challenge-viper */;
+			targetProxy = 9D67B646224EC57C008A8225 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D67B62A224EC57A008A8225 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D67B62B224EC57A008A8225 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D67B632224EC57C008A8225 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D67B633224EC57C008A8225 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D67B64C224EC57C008A8225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D67B64D224EC57C008A8225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D67B64F224EC57C008A8225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RVKXBF2M3;
+				INFOPLIST_FILE = "zap-challenge-viper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zapchallengeviper.zap-challenge-viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D67B650224EC57C008A8225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RVKXBF2M3;
+				INFOPLIST_FILE = "zap-challenge-viper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zapchallengeviper.zap-challenge-viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D67B652224EC57C008A8225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RVKXBF2M3;
+				INFOPLIST_FILE = "zap-challenge-viperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zapchallengeviper.zap-challenge-viperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zap-challenge-viper.app/zap-challenge-viper";
+			};
+			name = Debug;
+		};
+		9D67B653224EC57C008A8225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RVKXBF2M3;
+				INFOPLIST_FILE = "zap-challenge-viperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zapchallengeviper.zap-challenge-viperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zap-challenge-viper.app/zap-challenge-viper";
+			};
+			name = Release;
+		};
+		9D67B655224EC57C008A8225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RVKXBF2M3;
+				INFOPLIST_FILE = "zap-challenge-viperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zapchallengeviper.zap-challenge-viperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "zap-challenge-viper";
+			};
+			name = Debug;
+		};
+		9D67B656224EC57C008A8225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RVKXBF2M3;
+				INFOPLIST_FILE = "zap-challenge-viperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zapchallengeviper.zap-challenge-viperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "zap-challenge-viper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D67B61E224EC57A008A8225 /* Build configuration list for PBXProject "zap-challenge-viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D67B64C224EC57C008A8225 /* Debug */,
+				9D67B64D224EC57C008A8225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D67B64E224EC57C008A8225 /* Build configuration list for PBXNativeTarget "zap-challenge-viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D67B64F224EC57C008A8225 /* Debug */,
+				9D67B650224EC57C008A8225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D67B651224EC57C008A8225 /* Build configuration list for PBXNativeTarget "zap-challenge-viperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D67B652224EC57C008A8225 /* Debug */,
+				9D67B653224EC57C008A8225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D67B654224EC57C008A8225 /* Build configuration list for PBXNativeTarget "zap-challenge-viperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D67B655224EC57C008A8225 /* Debug */,
+				9D67B656224EC57C008A8225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D67B62D224EC57A008A8225 /* zap_challenge_viper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D67B62E224EC57A008A8225 /* zap_challenge_viper.xcdatamodel */,
+			);
+			currentVersion = 9D67B62E224EC57A008A8225 /* zap_challenge_viper.xcdatamodel */;
+			path = zap_challenge_viper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9D67B61B224EC57A008A8225 /* Project object */;
+}
